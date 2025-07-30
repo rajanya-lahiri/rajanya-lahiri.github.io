@@ -2343,7 +2343,7 @@ input, select, textarea {
 
 	}
 
-	.hero-section {
+	/* .hero-section {
 		background: black;
 		color: white;
 		padding: 8em 0 4em 0;
@@ -2354,12 +2354,12 @@ input, select, textarea {
 	}
 	
 	.hero-section img {
-		width: 250px; /* or any size you want */
+		width: 250px;
 		height: 250px;
 		object-fit: cover;
-		border-radius: 50%; /* makes it circular */
+		border-radius: 50%;
 		box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-		border: 4px solid white; /* optional: adds a clean border */
+		border: 4px solid white;
 	}
 	
 
@@ -2372,9 +2372,9 @@ input, select, textarea {
 	
 	.hero-section p {
 		font-size: 1.25em;
-		line-height: 1.7em;
+		line-height: 1.7em; */
 		/* margin-bottom: 1.7em; */
-		margin-top: 0;
+		/* margin-top: 0;
 		color: white;
 	}
 
@@ -2391,6 +2391,88 @@ input, select, textarea {
 		50% {
 			border-color: transparent;
 		}
+	} */
+
+
+	.hero-section {
+	background: black;
+	color: white;
+	padding: 6em 2em;
+	}
+
+	.hero-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: auto;
+	gap: 3em;
+	}
+
+	.hero-image img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid white;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+	}
+
+	.hero-text {
+	flex: 1;
+	min-width: 280px;
+	max-width: 600px;
+	}
+
+	.hero-text h1 {
+	font-size: 2.8em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	}
+
+	.hero-text h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	}
+
+	.typing {
+	font-weight: 600;
+	border-right: 2px solid #fff;
+	animation: blink 0.75s step-end infinite;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+	@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+	}
+
+	.hero-text p {
+	font-size: 1.1em;
+	line-height: 1.6em;
+	margin-top: 0;
+	}
+
+	@media (max-width: 768px) {
+	.hero-container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.hero-text {
+		max-width: 100%;
+	}
+
+	.hero-text h1 {
+		font-size: 2.2em;
+	}
+
+	.hero-text h2 {
+		font-size: 1.3em;
+	}
 	}
 
 	.button.primary {
