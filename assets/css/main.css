@@ -2111,6 +2111,12 @@ input, select, textarea {
 
 	}
 
+	@media (min-width: 1400px) {
+		.projects-container {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
 	@media screen and (max-width: 736px) {
 		#nav ul {
 		  flex-wrap: wrap;
@@ -2612,6 +2618,7 @@ input, select, textarea {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 1rem;
+	grid-auto-rows: auto;
   }
 
   
@@ -2622,13 +2629,14 @@ input, select, textarea {
 	cursor: pointer;
   } */
 
-  .project-card {
-  width: 100%;
-  aspect-ratio: 3 / 4; /* optional fallback if you want consistent aspect ratio */
-  max-width: 300px;
-  perspective: 1000px;
-  cursor: pointer;
- }
+ .project-card {
+	width: 100%;
+	aspect-ratio: 3 / 4;
+	max-width: 300px;
+	perspective: 1000px;
+	cursor: pointer;
+} 
+
   
   .card-inner {
 	position: relative;
@@ -2652,6 +2660,10 @@ input, select, textarea {
 	padding: 20px;
 	box-sizing: border-box;
 	border-radius: 12px;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start;
+  	overflow: hidden;
   }
   
   .card-front {
