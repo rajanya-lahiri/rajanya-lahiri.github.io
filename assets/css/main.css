@@ -2363,10 +2363,6 @@ input, select, textarea {
 		margin-bottom: 0.75em;
 		color: white;
 	}
-
-	.hero-section h2 {
-		/* margin-bottom: 0.2em; */
-	}
 	
 	.hero-section p {
 		font-size: 1.25em;
@@ -2606,11 +2602,18 @@ input, select, textarea {
   }
   
   .projects-container {
-	display: flex;
+	/* display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 30px; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
   }
+
   
   .project-card {
 	width: 300px;
