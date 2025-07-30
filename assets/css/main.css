@@ -2615,12 +2615,20 @@ input, select, textarea {
   }
 
   
-  .project-card {
+  /* .project-card {
 	width: 300px;
 	height: 420px;
 	perspective: 1000px;
 	cursor: pointer;
-  }
+  } */
+
+  .project-card {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* optional fallback if you want consistent aspect ratio */
+  max-width: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+ }
   
   .card-inner {
 	position: relative;
