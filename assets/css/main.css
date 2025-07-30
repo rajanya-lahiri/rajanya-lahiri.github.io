@@ -145,10 +145,10 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	/* h1, h2, h3, h4, h5, h6 {
 		color: #3e3e3e;
 		margin: 0 0 0.75em 0;
-	}
+	} */
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		text-decoration: none;
@@ -159,7 +159,7 @@ input, select, textarea {
 		font-weight: 700;
 	}
 
-	h1 {
+	/* h1 {
 		font-size: 3.25em;
 		letter-spacing: -0.025em;
 		font-weight: 300;
@@ -167,9 +167,9 @@ input, select, textarea {
 
 		h1 strong {
 			font-weight: 700;
-		}
+		} */
 
-	h2 {
+	/* h2 {
 		font-size: 2em;
 		letter-spacing: -0.015em;
 	}
@@ -185,7 +185,7 @@ input, select, textarea {
 
 	br.clear {
 		clear: both;
-	}
+	} */
 
 	hr {
 		border: 0;
@@ -202,7 +202,7 @@ input, select, textarea {
 	}
 
 	header {
-		margin: 0 0 3em 0;
+		margin: 0 0 0 0;
 	}
 
 		header > p {
@@ -281,7 +281,7 @@ input, select, textarea {
 
 /* Row */
 
-	.row {
+	/* .row {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
@@ -520,9 +520,9 @@ input, select, textarea {
 
 				.row.gtr-200.gtr-uniform > * {
 					padding-top: 50px;
-				}
+				} */
 
-		@media screen and (max-width: 1680px) {
+		/* @media screen and (max-width: 1680px) {
 
 			.row {
 				display: flex;
@@ -765,7 +765,7 @@ input, select, textarea {
 							padding-top: 50px;
 						}
 
-		}
+		} */
 
 		@media screen and (max-width: 1280px) {
 
@@ -1918,6 +1918,15 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
+
+			/* display: flex;
+			flex-direction: row;      
+			justify-content: center; 
+			flex-wrap: wrap;
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style: none; */
+			
 		}
 
 		#nav li {
@@ -1970,7 +1979,7 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
-	#top {
+	/* #top {
 		padding: 10em 0 10em 0;
 		text-align: left;
 	}
@@ -1997,7 +2006,7 @@ input, select, textarea {
 
 			#top p a {
 				color: inherit;
-			}
+			} */
 
 	#contact footer {
 		font-size: 0.9em;
@@ -2056,7 +2065,7 @@ input, select, textarea {
 			}
 
 			header {
-				margin: 0 0 4em 0;
+				margin: 0 0 1em 0;
 			}
 
 		/* Wrappers */
@@ -2102,6 +2111,24 @@ input, select, textarea {
 
 	}
 
+	@media screen and (max-width: 736px) {
+		#nav ul {
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  flex-direction: row;
+		}
+	  
+		/* #nav li {
+		  display: block;
+		  margin: 5px 0;
+		} */
+	  
+		#nav a {
+		  font-size: 0.9em;
+		  padding: 0.5em 1em;
+		}
+	  }	  
+
 /* Small */
 
 	@media screen and (max-width: 736px) {
@@ -2129,7 +2156,7 @@ input, select, textarea {
 			}
 
 			header {
-				margin: 0 0 2em 0;
+				margin: 0 0 0 0;
 			}
 
 				header > p {
@@ -2333,15 +2360,35 @@ input, select, textarea {
 	.hero-section h1 {
 		font-size: 2.5em;
 		font-weight: bold;
-		margin-bottom: 0.1em;
+		margin-bottom: 0.75em;
 		color: white;
+	}
+
+	.hero-section h2 {
+		/* margin-bottom: 0.2em; */
 	}
 	
 	.hero-section p {
 		font-size: 1.25em;
 		line-height: 1.7em;
-		margin-bottom: 1.7em;
+		/* margin-bottom: 1.7em; */
+		margin-top: 0;
 		color: white;
+	}
+
+	.typing {
+		font-weight: 600;
+		border-right: 2px solid #000;
+		white-space: nowrap;
+		overflow: hidden;
+		animation: blink 0.75s step-end infinite;
+		font-size: 1.25em;
+	}
+
+	@keyframes blink {
+		50% {
+			border-color: transparent;
+		}
 	}
 
 	.button.primary {
@@ -2435,7 +2482,7 @@ input, select, textarea {
   }
   
   .experience-card p {
-	font-size: 1em;
+	font-size: 1.1em;
 	color: black;
 	line-height: 1.6em;
   }  
@@ -2620,7 +2667,7 @@ input, select, textarea {
   }
   
   .project-shortdesc {
-	font-size: 14px;
+	font-size: 1em;
 	color: white;
   }
   
@@ -2632,7 +2679,7 @@ input, select, textarea {
   .card-back ul {
 	text-align: left;
 	padding-left: 20px;
-	font-size: 14px;
+	font-size: 1em;
   }
   
   .card-back ul li {
@@ -2737,6 +2784,7 @@ input, select, textarea {
   .education-card ul li {
   list-style-type: disc;
   margin-bottom: 0.1em;
+  font-size: 1.1em;
   }
 
   /* Contact Section */
@@ -2777,7 +2825,7 @@ input, select, textarea {
 
 .signature-name {
   font-family: 'Great Vibes', cursive;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #e6e1d8; /* soft light cream */
   font-weight: normal;
   margin-bottom: 0.2em;
